@@ -15,33 +15,3 @@ bool boardOrNot(vector<vector<int>> &a, int n)
     }
     return true;
 }
-int main()
-{
-    vector<vector<int>> board1 = {{0, 1},
-                                  {1, 0}};
-
-    vector<vector<int>> board2 = {{1, 0, 1},
-                                  {0, 1, 0},
-                                  {1, 0, 1}};
-
-    vector<vector<int>> board3 = {{1, 0, 1},
-                                  {0, 1, 0},
-                                  {1, 1, 1}};
-
-    if (boardOrNot(board1, 2))
-        cout << "true\n";
-    else
-        cout << "false\n";
-
-    if (boardOrNot(board2, 3))
-        cout << "true\n";
-    else
-        cout << "false\n";
-
-    if (boardOrNot(board3, 3))
-        cout << "true\n";
-    else
-        cout << "false\n";
-
-    return 0;
-}
